@@ -32,4 +32,16 @@ void setup() {
 void loop() {
     dnsProcess();
     portalHandleClient();
+
+    static int previousClients = -1;
+    int clients = WiFi.softAPgetStationNum();
+
+    if (clients != previousClients) {
+        previousClients = clients;
+        if (clients > 0) {
+            displayShowClientConnected();
+        } else {
+            displayShowStartup();
+        }
+    }
 }
