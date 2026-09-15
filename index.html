@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>F1 Security Lab</title>
+
+    <link
+        rel="stylesheet"
+        href="/style.css"
+    >
+</head>
+
+<body>
+
+<div class="warning">
+
+    <div class="warning-icon">
+        ⚠
+    </div>
+
+    <h1>PHISHING SIMULATION</h1>
+
+    <p class="warning-text">
+        This page is part of an authorized
+        cybersecurity laboratory exercise.
+    </p>
+
+    <div class="danger-box">
+
+        <strong>
+            SECURITY WARNING
+        </strong>
+
+        <p>
+            In a real phishing attack, information
+            entered into a malicious page could be
+            transmitted to and stored by an attacker.
+        </p>
+
+        <p>
+            <strong>
+                Never enter a real password into an
+                untrusted page.
+            </strong>
+        </p>
+
+    </div>
+
+</div>
+
+
+<div class="card">
+
+    <div class="logo">
+        F1 SECURITY LAB
+    </div>
+
+    <h2>
+        Wi-Fi Sign In
+    </h2>
+
+    <p class="subtitle">
+        Laboratory simulation
+    </p>
+
+    <form id="loginForm">
+
+        <label for="username">
+            Email
+        </label>
+
+        <input
+            id="username"
+            name="username"
+            type="text"
+            autocomplete="off"
+            placeholder="example@lab.local"
+        >
+
+        <label for="password">
+            Password
+        </label>
+
+        <input
+            id="password"
+            type="password"
+            autocomplete="off"
+            placeholder="Do not use a real password"
+        >
+
+        <button type="submit">
+            Sign in
+        </button>
+
+    </form>
+
+    <div class="lab-note">
+        Authorized security laboratory only.
+    </div>
+
+</div>
+
+
+<div
+    id="result"
+    class="result hidden"
+>
+    <div class="result-icon">
+        ✓
+    </div>
+
+    <h2>
+        PHISHING ATTACK DETECTED
+    </h2>
+
+    <p>
+        You just submitted information to a
+        simulated phishing page.
+    </p>
+
+    <p>
+        In a real attack, the credentials entered
+        here could now be in the attacker's
+        possession.
+    </p>
+
+    <div class="safe">
+        Your password was NOT stored or transmitted
+        by this simulation.
+    </div>
+
+</div>
+
+
+<script src="/app.js"></script>
+
+</body>
+</html>
