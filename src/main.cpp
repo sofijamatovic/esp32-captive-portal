@@ -4,6 +4,7 @@
 #include "config.h"
 #include "display.h"
 #include "dns_service.h"
+#include "portal.h"
 
 static void setupAccessPoint() {
     WiFi.softAP(LAB_SSID, LAB_PASSWORD);
@@ -23,10 +24,12 @@ void setup() {
 
     setupAccessPoint();
     dnsInit();
+    portalInit();
 
-    Serial.println("[SYSTEM] AP + DNS checkpoint");
+    Serial.println("[SYSTEM] AP + DNS + portal checkpoint");
 }
 
 void loop() {
     dnsProcess();
+    portalHandleClient();
 }
