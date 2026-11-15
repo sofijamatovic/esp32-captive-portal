@@ -6,8 +6,7 @@ client, and serves a captive portal that demonstrates how phishing-style credent
 harvesting works — safely, on hardware you own, with **no real credentials ever
 captured, logged, or transmitted.**
 
-Built for hands-on learning around Wi-Fi/BLE security concepts, and as an entry for
-[hackathon name].
+Built for hands-on learning around Wi-Fi security concepts.
 
 ## Why this project
 
